@@ -43,12 +43,12 @@
         <div class="user">
             <img id="photoURL" src="https://media.giphy.com/avatars/default3.gif" alt="">
             <span id="username" >
-                BlisS
+                Login
             </span>
         </div>
     </nav>
     <section class="search">
-        <input placeholder="Search for Memes you love" type="text">
+        <input id="searching" placeholder="Search for Memes you love" type="text">
         <img src="https://blog.airtable.com/content/images/2018/04/blockIconImages-2F3zZbh6x3QMSH6WqBjMGH_search-icon.png" alt="">
     </section>
     <section id="results" class="results">
@@ -171,6 +171,24 @@
     src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
     crossorigin="anonymous"></script>
+
+    <!-- Aqui va Firebase -->
+
+<script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC4y_UiuUZI1GUaRxiJTT7iSMDahpwj_Bc",
+    authDomain: "nevermind-ad1ae.firebaseapp.com",
+    databaseURL: "https://nevermind-ad1ae.firebaseio.com",
+    projectId: "nevermind-ad1ae",
+    storageBucket: "nevermind-ad1ae.appspot.com",
+    messagingSenderId: "1077643302463"
+  };
+  firebase.initializeApp(config);
+</script>
+
     <script src="main.js"></script>
+
 </body>
 </html>

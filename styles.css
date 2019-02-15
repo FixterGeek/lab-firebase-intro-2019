@@ -54,6 +54,7 @@ nav > .upload > button:hover{
 nav > .user{
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 nav > .user > img{
