@@ -1,0 +1,103 @@
+body{
+    background: rgb(18,18,18)
+}
+nav{
+    align-items: center;
+    display: flex;
+    color:blue;
+    /* margin: 0 auto; */
+    width:100%;
+    min-width: 800px;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+nav > figure > img{
+    max-width:30px;
+}
+
+nav > .categories > button{
+    height: 20px;
+    border: none;
+    background: #222222;
+    color:white;
+    margin:0;
+    background: linear-gradient(to right, red , orange);
+    outline: none;
+    cursor: pointer;
+    transition:all .3s ease;
+}
+
+nav > .categories > button:hover{
+    background: linear-gradient(to left, red , orange);
+}
+
+nav > .upload {
+    margin: 0 10px 0 10px;
+}
+
+nav > .upload > button{
+    height: 30px;
+    background-color: blueviolet;
+    padding:10px 15px;
+    font-weight: bolder;
+    font-size: .8rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+nav > .upload > button:hover{
+    background-color: purple;
+}
+
+nav > .user{
+    display: flex;
+    align-items: center;
+}
+
+nav > .user > img{
+    width: 30px;
+    height: 30px;
+}
+nav > .user > span{
+    /* width: 30px; */
+    height: 30px;
+    background: grey;
+    padding: 5px;
+    box-sizing: border-box;
+    color:white;
+    font-weight: bold;
+    font-family: Avenir;
+}
+
+/* section */
+.search{
+    width:100%;
+    min-width: 800px;
+    display: flex;
+    justify-content: center;
+    margin-top:0px;
+}
+.search > input{
+    width: 75%; 
+    font-size: 2rem;
+    font-family: Avenir;
+}
+.search img{
+    width:60px;
+    height: 60px;
+}
+
+.results{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 800px;
+}
+
+.results > figure{
+    /* width:50%; */
+    margin: 5px;
+    /* box-sizing: border-box; */
+}
