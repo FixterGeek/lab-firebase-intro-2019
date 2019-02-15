@@ -51,7 +51,7 @@
         <input placeholder="Search for Memes you love" type="text">
         <img src="https://blog.airtable.com/content/images/2018/04/blockIconImages-2F3zZbh6x3QMSH6WqBjMGH_search-icon.png" alt="">
     </section>
-    <section class="results">
+    <section id="results" class="results">
         <figure>
             <img src="https://media0.giphy.com/media/9JBKdsyIL61WM/200w.webp?cid=ecf05e475c66f1ff6c7a33746b5dc70a" alt="">
         </figure>
@@ -157,9 +157,10 @@
             <h2>Sube tu hermoso meme</h2>
             <img id="preview">
             <br>  
-            <input name="title" placeholder="título" type="text">
+            <input id="title" name="title" placeholder="título" type="text">
             <br>
-            <input placeholder="TAGS: amlo, bliss, firebase, polloyon" name="tags" type="text">
+            <input id="tags" placeholder="TAGS: amlo bliss firebase polloyon" name="tags" type="text">
+            <button id="subir">Subir</button>
         </div>
     </div>
 

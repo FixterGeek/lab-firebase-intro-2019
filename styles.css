@@ -97,9 +97,11 @@ nav > .user > span{
 }
 
 .results > figure{
-    /* width:50%; */
     margin: 5px;
     /* box-sizing: border-box; */
+}
+.results > figure > img{
+    max-width: 200px;
 }
 
 /* modal */
@@ -127,8 +129,8 @@ nav > .user > span{
 }
 
 .modal-form{
-    width: 400px;
-    height: 600px;
+    width: 650px;
+    /* height: 550px; */
     background: rgb(18,18,18);
     border-radius: 10px;
     display: flex;
@@ -149,4 +151,22 @@ nav > .user > span{
     padding: 10px;
     font-size: 1rem;
     width: 80%;
+    border-radius:10px; 
+}
+
+.modal-form #subir{
+    height:50px;
+    padding: 0 20px;
+    color:white;
+    background: linear-gradient(to right, purple, blueviolet);
+    font-size:2rem;
+    outline: none;
+    border:none;
+    margin: 20px 0px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.modal-form #subir:hover{
+    background: linear-gradient(to left, purple, blueviolet);
+
 }
