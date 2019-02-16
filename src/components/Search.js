@@ -5,11 +5,14 @@ export default function () {
     let [results, setResults] = useState([])
     let [list, setList] = useState([])
     useEffect(() => {
+        setResults([])
         let unsubscribe = memeRef.onSnapshot(function (snap) {
+            let memes = []
             snap.forEach(function (doc) {
-                setResults(results => [doc.data(), ...results])
-                setList(results => [doc.data(), ...results])
+                memes.push(doc.data())
             })
+            setResults(memes)
+            setList(memes)
         })
 
         return unsubscribe
@@ -37,7 +40,7 @@ export default function () {
                 {results.map((r, i) => {
                     return (
                         <figure key={i}>
-                            <img src={r.link} />
+                            <img alt="result" src={r.link} />
                         </figure>
                     )
                 })}
