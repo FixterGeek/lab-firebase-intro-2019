@@ -12,3 +12,177 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+body{
+  background: rgb(18,18,18)
+}
+nav{
+  align-items: center;
+  display: flex;
+  color:blue;
+  /* margin: 0 auto; */
+  width:100%;
+  min-width: 800px;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+nav > figure > img{
+  max-width:30px;
+}
+
+nav > .categories > button{
+  height: 20px;
+  border: none;
+  background: #222222;
+  color:white;
+  margin:0;
+  background: linear-gradient(to right, red , orange);
+  outline: none;
+  cursor: pointer;
+  transition:all .3s ease;
+}
+
+nav > .categories > button:hover{
+  background: linear-gradient(to left, red , orange);
+}
+
+nav > .upload {
+  margin: 0 10px 0 10px;
+}
+
+nav > .upload > button{
+  height: 30px;
+  background-color: blueviolet;
+  padding:10px 15px;
+  font-weight: bolder;
+  font-size: .8rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+nav > .upload > button:hover{
+  background-color: purple;
+}
+
+nav > .user{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+nav > .user > img{
+  width: 30px;
+  height: 30px;
+}
+nav > .user > span{
+  /* width: 30px; */
+  height: 30px;
+  background: grey;
+  padding: 5px;
+  box-sizing: border-box;
+  color:white;
+  font-weight: bold;
+  font-family: Avenir;
+}
+
+/* section */
+.search{
+  width:100%;
+  min-width: 800px;
+  display: flex;
+  justify-content: center;
+  margin-top:0px;
+}
+.search > input{
+  width: 75%; 
+  font-size: 2rem;
+  font-family: Avenir;
+}
+.search img{
+  width:60px;
+  height: 60px;
+}
+
+.results{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: 800px;
+}
+
+.results > figure{
+  margin: 5px;
+  /* box-sizing: border-box; */
+}
+.results > figure > img{
+  max-width: 300px;
+}
+
+/* modal */
+
+.modal{
+  position: fixed;
+  top:0;
+  width: 100vw;
+  height: 100%;
+  background: rgba(255,255,255,.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.modal #tache{
+  font-size: 4rem;
+  font-family: Avenir;
+  position: absolute;
+  top:50px;
+  right: 50px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.modal-form{
+  width: 650px;
+  /* height: 550px; */
+  background: rgb(18,18,18);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color:white;
+  font-family: Avenir;
+}
+
+.modal-form #preview{
+  height: 350px;
+}
+
+.modal-form input{
+  font-size: 1.5rem;
+  font-family: Avenir;
+  padding: 10px;
+  font-size: 1rem;
+  width: 80%;
+  border-radius:10px; 
+}
+
+.modal-form #subir{
+  height:50px;
+  padding: 0 20px;
+  color:white;
+  background: linear-gradient(to right, purple, blueviolet);
+  font-size:2rem;
+  outline: none;
+  border:none;
+  margin: 20px 0px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.modal-form #subir:hover{
+  background: linear-gradient(to left, purple, blueviolet);
+
+}
